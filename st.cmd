@@ -20,8 +20,11 @@ dbLoadRecords("$(EPICS_BASE)/db/reccaster.db", "P=CS{$(IOCNAME)}RSync")
 dbLoadRecords("$(EPICS_BASE)/db/save_restoreStatus.db", "P=CS{$(IOCNAME)}")
 save_restoreSet_status_prefix("CS{$(IOCNAME)}")
 
-# use commands to make sure the autosave directory "as" is writable: 
-## mkdir -p as/save; mkdir -p as/req; chmod 1777 -R as;
+system("install -m 777 -d ${PWD}/as/save")
+system("install -m 777 -d ${PWD}/as/req"
+# if the 'system' commands above fail, then manually use commands on a terminal 
+## to create autosave-relaed directories and make sure they are writable: 
+## mkdir -p as/save; mkdir -p as/req; chmod 777 -R as;
 set_savefile_path("${PWD}/as","/save")
 set_requestfile_path("${PWD}/as","/req")
 # 3 types of info node: autosaveFields_pass0, autosaveFields_pass1, autosaveFields

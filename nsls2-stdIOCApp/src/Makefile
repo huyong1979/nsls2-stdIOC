@@ -30,7 +30,7 @@ nsls2-stdIOC_DBD += reccaster.dbd
 #nsls2-stdIOC_DBD += stream.dbd
 
 # to use the Linux command 'system'
-#nsls2-stdIOC_DBD += system.dbd
+nsls2-stdIOC_DBD += system.dbd
 
 # nsls2-stdIOC_registerRecordDeviceDriver.cpp derives from nsls2-stdIOC.dbd
 nsls2-stdIOC_SRCS += nsls2-stdIOC_registerRecordDeviceDriver.cpp
