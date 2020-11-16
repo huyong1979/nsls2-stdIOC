@@ -1,0 +1,12 @@
+NAME=your-IOC-name
+PORT=telnet-port-number
+HOST=the-server-name-where-your-IOC-runs
+# the line below is standardized / fixed
+USER=softioc
+
+# use "manage-iocs nextport" to get the telnet-port-number
+
+# to log in the EPICS console/shell, type "telnet localhost telnet-port-number", 
+## then hit Enter and you will see "epics>"; to restart the softIOC, type "exit"
+## or "Ctrl+X"; to quit the shell (return to your terminal), "Ctrl+]", 
+## you will see "telnet>", then type "q"

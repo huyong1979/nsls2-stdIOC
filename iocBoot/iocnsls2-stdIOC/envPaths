@@ -1,0 +1,3 @@
+epicsEnvSet("IOC","iocnsls2-stdIOC")
+epicsEnvSet("TOP","/home/yhu/dev/nsls2-stdIOC")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

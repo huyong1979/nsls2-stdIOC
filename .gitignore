@@ -1,0 +1,10 @@
+bin/
+db/
+dbd/
+include/
+lib/
+configure/O.*
+nsls2-stdIOCApp/Db/O.*
+nsls2-stdIOCApp/src/O.*
+as/
+*.~
